@@ -1,8 +1,5 @@
 <?php
-namespace funct;
-
-use stud\Student;
-use group\Group;
+namespace saaawww;
 
 function printStudentInfo(Student $student)
 {

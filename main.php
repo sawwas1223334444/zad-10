@@ -1,13 +1,11 @@
 <?php
 
-require_once 'src/Student.php';
-require_once 'src/Group.php';
-require_once 'src/Functions.php';
+require_once 'vendor/autoload.php';
 
-use stud\Student;
-use group\Group;
-use function funct\printStudentInfo;
-use function funct\printGroupInfo;
+use saaawww\Student;
+use saaawww\Group;
+use function saaawww\printStudentInfo;
+use function saaawww\printGroupInfo;
 
 echo "     СИСТЕМА УЧЕТА СТУДЕНТОВ \n\n";
 

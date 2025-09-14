@@ -1,5 +1,6 @@
 <?php
-namespace stud;
+
+namespace saaawww;
 
 class Student
 {

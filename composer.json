@@ -1,0 +1,16 @@
+{
+    "name": "saaawww/student-management",
+    "description": "Система учета студентов и их оценок",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "saaawww\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}

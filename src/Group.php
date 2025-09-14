@@ -1,7 +1,6 @@
 <?php
-namespace group;
+namespace saaawww;
 
-use stud\Student;
 
 class Group
 {
