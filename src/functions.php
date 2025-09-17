@@ -1,7 +1,10 @@
 <?php
 namespace saaawww;
 
-function printStudentInfo(Student $student)
+use saaawww\Student;
+use saaawww\Group;
+
+function printStudentInfo(Student $student): void
 {
     echo "Студент: {$student->firstName} {$student->lastName}\n";
     echo "Средний балл: " . round($student->getAverage(), 2) . "\n";
@@ -9,7 +12,7 @@ function printStudentInfo(Student $student)
     echo "\n";
 }
 
-function printGroupInfo(Group $group)
+function printGroupInfo(Group $group): void
 {
     echo "Группа: {$group->groupName}\n";
     echo "Количество студентов: {$group->getStudentsCount()}\n";

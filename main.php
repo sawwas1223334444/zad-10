@@ -7,7 +7,7 @@ use saaawww\Group;
 use function saaawww\printStudentInfo;
 use function saaawww\printGroupInfo;
 
-echo "     СИСТЕМА УЧЕТА СТУДЕНТОВ \n\n";
+echo "   СИСТЕМА УЧЕТА СТУДЕНТОВ \n\n";
 
 $student1 = new Student("Семен", "Алексеев");
 $student2 = new Student("Ирина", "Новикова");

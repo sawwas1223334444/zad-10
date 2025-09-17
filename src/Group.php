@@ -1,26 +1,25 @@
 <?php
 namespace saaawww;
 
-
 class Group
 {
-    public $groupName;
-    private $students = [];
+    public string $groupName;
+    private array $students = [];
 
-    public function __construct($groupName)
+    public function __construct(string $groupName)
     {
         $this->groupName = $groupName;
     }
 
-    public function addStudent(Student $student)
+    public function addStudent(Student $student): void
     {
         $this->students[] = $student;
     }
 
-    public function getGroupAverage()
+    public function getGroupAverage(): float
     {
         if (empty($this->students)) {
-            return 0;
+            return 0.0;
         }
 
         $totalSum = 0;
@@ -31,10 +30,10 @@ class Group
             $totalCount += count($student->getGrades());
         }
 
-        return $totalSum / $totalCount;
+        return $totalCount > 0 ? (float)($totalSum / $totalCount) : 0.0;
     }
 
-    public function getBestStudent()
+    public function getBestStudent(): ?Student
     {
         if (empty($this->students)) {
             return null;
@@ -54,12 +53,12 @@ class Group
         return $bestStudent;
     }
 
-    public function getStudents()
+    public function getStudents(): array
     {
         return $this->students;
     }
 
-    public function getStudentsCount()
+    public function getStudentsCount(): int
     {
         return count($this->students);
     }
